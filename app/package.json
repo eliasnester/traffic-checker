@@ -1,0 +1,12 @@
+{
+    "name": "traffic-checker-api",
+    "private": true,
+    "version": "0.0.1",
+    "description": "Node.js app to extract traffic data from google maps",
+    "author": "Elias Nester <elias.nester@gmail.com>",
+    "main": "server.js",
+    "dependencies": {
+        "express": "4.12.0",
+        "body-parser": "1.13.2"
+    }
+}
