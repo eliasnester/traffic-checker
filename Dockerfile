@@ -6,11 +6,14 @@ RUN rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.
 # Install Node.js and npm
 RUN yum install -y npm
 
+# Create /src/gmaps-traffic-parser
+RUN mkdir -p /src/gmaps-traffic-parser/
+
 # Copy casperjs script and package
-COPY ./gmaps-traffic-parser/traffic-status-casper.js /src/
+COPY ./gmaps-traffic-parser/traffic-status-casper.js /src/gmaps-traffic-parser/
 
 # Copy api part
-RUN mkdir -p /src/app
+RUN mkdir /src/app
 COPY app/server.js /src/app/
 COPY app/package.json /src/app/
 
