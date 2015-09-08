@@ -1,6 +1,6 @@
 RED <- hardware.pin9;
-YELLOW <- hardware.pin7;
-GREEN <- hardware.pin8;
+YELLOW <- hardware.pin8;
+GREEN <- hardware.pin7;
 
 colors <- {"red": RED, "yellow": YELLOW, "green": GREEN}
 
